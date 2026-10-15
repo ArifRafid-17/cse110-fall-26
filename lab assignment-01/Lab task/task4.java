@@ -4,5 +4,10 @@ public class task4 {
         int lastNum = num % 100;
 
         System.out.println(lastNum);
+
+        int lastRightNum = lastNum % 10;
+        int lastRightSecondNum = lastNum / 10;
+        System.out.println(lastRightNum);
+        System.out.println(lastRightSecondNum); 
     }
 }

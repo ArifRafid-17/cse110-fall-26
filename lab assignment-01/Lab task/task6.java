@@ -2,7 +2,7 @@ public class task6 {
     public static void main(String [] args){
 
 
-        //a
+        //b
 
         System.out.println("......Creating a new Variable");
         int firstNum =3;
@@ -17,13 +17,13 @@ public class task6 {
         firstNum= secondNum;
         secondNum = temp;
 
-        System.out.println("...........After Swapping.........");
+        System.out.println("//...........After Swapping.........//");
 
         System.out.println("Your first num: "+firstNum);
         System.out.println("Your second num: "+secondNum);
 
 
-        //b
+        //a
 
         System.out.println("......Without Creating any other variable.......");
 
@@ -33,7 +33,6 @@ public class task6 {
         firstNum1=firstNum1+secondNum1;
         secondNum1=firstNum1-secondNum1;
         firstNum1=firstNum1-secondNum1;
-
 
         System.out.println("...........After Swapping.........");
 
