@@ -1,0 +1,66 @@
+
+
+//Task01
+public class task1 {
+    public static void main(String[] args) {
+        int minutes= 3456789;
+        int year = minutes / (365 * 24 * 60);
+        int remainingMinutes = minutes % (365 * 24 * 60);
+        int days = remainingMinutes / (24 * 60);
+        System.out.println(minutes + " minutes is approximately " + (int) year + " years and " + (int) days + " days");
+    }
+}
+
+
+//Task02
+public class task2 {
+    public static void main(String [] args){
+        int a = 2;
+        int b =5;
+        int c = 8;
+        int d = ((2*b)* ((c-a)/3) +7);
+        System.out.println("Ans: "+d);
+    }
+}
+
+//Task03
+public class task3 {
+    public static void main(String [] args){
+        int id = 1000054943;
+        int rightTwoDigit = id % 100;
+        int RightDigit = rightTwoDigit%10;
+        int leftDigit = rightTwoDigit /10;
+        System.out.println("---------------Reversed Two Rightmost Digits-------------");
+        System.out.println(RightDigit+" "+ leftDigit);
+    }
+}
+
+//Task04
+public class task4 {
+    public static void main(String [] args){
+        int width = 13;
+        int length = 10;
+        double shortestLength = (width*width) + (length* length);
+        double result = Math.sqrt(shortestLength);
+        System.out.println("Shortest Length is "+result);
+    }
+}
+
+//Task05
+
+public class task5{
+    public static void main (String [] args){
+        double a = 4.5;
+        double b = 9.5;
+        double cTemp = ((a*a)+(b*b));
+        double c = Math.sqrt(cTemp);
+        double sinA = (a/c);
+        double cosA = (b/c);
+        double sinB = (b/c);
+        double cosB = (a/c);
+        System.out.println("SinA: "+sinA);
+        System.out.println("CosA: "+cosA);
+        System.out.println("SinB: "+sinB);
+        System.out.println("cosB: "+cosB);
+    }
+}
