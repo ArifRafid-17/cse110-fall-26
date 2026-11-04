@@ -27,7 +27,6 @@ public class task05 {
             if(change >=100){
                 hundredNote = change / 100;
                 change = change % 100;
-                
             }
             if(change >=50){
                 fiftyNote = change / 50;
