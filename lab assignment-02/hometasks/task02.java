@@ -18,7 +18,7 @@ public class task02 {
             double discountedBill = totalBill - (totalBill * 0.20);
             if(flag) {
                 double discountedBillWithSurcharge = discountedBill + (discountedBill * 0.05);
-                System.out.println("Final Bill: " + discountedBillWithSurcharge);
+                System.out.println("Final Bill: " + discountedBillWithSurcharge+ " Taka");
             }
             else{
                 System.out.println("Final Bill: " + discountedBill+ " Taka");
