@@ -9,7 +9,7 @@ public class task04 {
         System.out.println("This is a Equilateral triangle");
       }
       else if(a==b || a==c || b==c){
-        System.out.println("This is an Isosceles triangle");
+        System.out.println("This is a Isosceles triangle");
       }
       else{
         System.out.println("This is a Scalene triangle");

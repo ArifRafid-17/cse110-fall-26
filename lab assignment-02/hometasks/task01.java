@@ -6,13 +6,13 @@ public class task01 {
         int a = sc.nextInt();
 
         if(a%5==0 && a%7==0){
-            System.out.println("Invalid: Divisible by Both");
+            System.out.println("Invalid: Divisible by both");
         }
         else if(a%5==0 && a%7!=0){
-            System.out.println("Divisible by 5 only");
+            System.out.println("Divisible by 5 Only");
         }
         else if(a%5!=0 && a%7==0){
-            System.out.println("Divisible by 7 only");
+            System.out.println("Divisible by 7 Only");
         }
         else{
             System.out.println("No");

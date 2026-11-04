@@ -21,7 +21,7 @@ public class task02 {
                 System.out.println("Final Bill: " + discountedBillWithSurcharge);
             }
             else{
-                System.out.println("Final Bill: " + discountedBill);
+                System.out.println("Final Bill: " + discountedBill+ " Taka");
             }
             
         } 
@@ -29,19 +29,19 @@ public class task02 {
             double discountedBill = totalBill - (totalBill * 0.10);
             if(flag) {
                 double discountedBillWithSurcharge = discountedBill + (discountedBill * 0.05);
-                System.out.println("Final Bill: " + discountedBillWithSurcharge);
+                System.out.println("Final Bill: " + discountedBillWithSurcharge+ " Taka");
             }
             else{
-                System.out.println("Final Bill: " + discountedBill);
+                System.out.println("Final Bill: " + discountedBill+ " Taka");
             }
         } 
         else {
             if(flag) {
                 double BillWithSurcharge = totalBill + (totalBill * 0.05);
-                System.out.println("Final Bill: " + BillWithSurcharge);
+                System.out.println("Final Bill: " + BillWithSurcharge+ " Taka");
             }
             else{
-                System.out.println("Final Bill: " + totalBill);
+                System.out.println("Final Bill: " + totalBill+ " Taka");
             }
         }        
     }

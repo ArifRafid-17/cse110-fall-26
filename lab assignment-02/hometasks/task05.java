@@ -52,13 +52,13 @@ public class task05 {
                 oneCoin = change / 1;
             }
 
-            System.out.println("100 Taka note: "+hundredNote);
-            System.out.println("50 Taka note: "+fiftyNote);
-            System.out.println("20 Taka note: "+twentyNote);
-            System.out.println("10 Taka note: "+tenNote);
-            System.out.println("5 Taka coin: "+fiveCoin);
-            System.out.println("2 Taka coin: "+twoCoin);
-            System.out.println("1 Taka coin: "+oneCoin);
+            System.out.println("100 taka note: "+hundredNote);
+            System.out.println("50 taka note: "+fiftyNote);
+            System.out.println("20 taka note: "+twentyNote);
+            System.out.println("10 taka note: "+tenNote);
+            System.out.println("5 taka coin: "+fiveCoin);
+            System.out.println("2 taka coin: "+twoCoin);
+            System.out.println("1 taka coin: "+oneCoin);
 
         }
     }

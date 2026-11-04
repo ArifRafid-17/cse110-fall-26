@@ -9,31 +9,31 @@ public class task03 {
         System.out.print("Enter your third Number: ");
         double c = sc.nextDouble();
 
-        if(a>b && a>c){
+        if(a >= b && a >= c){
             System.out.println("Maximum Number is "+a);
-            if(b>c){
-                System.out.println("Minimum Number is "+c);
-            }
-            else{
+            if(b < c){
                 System.out.println("Minimum Number is "+b);
             }
+            else{
+                System.out.println("Minimum Number is "+c);
+            }
         }
-        else if(b>a && b>c){
+        else if(b >= a && b >= c){
             System.out.println("Maximum Number is "+b);
-            if(a>c){
+            if(a < c){
+                System.out.println("Minimum Number is "+a);
+            }
+            else{
                 System.out.println("Minimum Number is "+c);
             }
-            else{
-                System.out.println("Minimum Number is "+a);
-            }
         }
-        else if(c>a && c>b){
+        else if(c >= a && c >= b){
              System.out.println("Maximum Number is "+c);
-             if(a>b){
-                System.out.println("Minimum Number is "+b);
+             if(a < b){
+                System.out.println("Minimum Number is "+a);
             }
             else{
-                System.out.println("Minimum Number is "+a);
+                System.out.println("Minimum Number is "+b);
             }
         }
     }
