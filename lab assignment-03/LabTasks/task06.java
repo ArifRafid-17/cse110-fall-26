@@ -1,0 +1,17 @@
+package LabTasks;
+import java.util.Scanner;
+public class task06 {
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int count=0;
+        while(true){
+            if(num==0){
+                break;
+            }
+            num = num/10;
+            count++;
+        }
+        System.out.println("Total digits : "+count);
+    }  
+}
