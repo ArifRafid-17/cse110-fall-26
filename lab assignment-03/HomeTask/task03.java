@@ -15,12 +15,6 @@ public class task03 {
         boolean flag = false;
 
         for (int i = 1; i <= rivers; i++) {
-
-            if (energy < 0) {
-                System.out.println("Tired at River " + (i-1));
-                flag = true;
-                break;
-            }
             System.out.print("Enter River Distance D" + i + ": ");
             int D = sc.nextInt();
 
@@ -29,6 +23,11 @@ public class task03 {
             } else {
                 double temp = D / 2;
                 energy -= (int) temp;
+            }
+            if (energy < 0) {
+                System.out.println("Tired at River " + i);
+                flag = true;
+                break;
             }
 
         }

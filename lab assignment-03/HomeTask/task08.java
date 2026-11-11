@@ -11,7 +11,7 @@ public class task08 {
         int Neg=0;
 
         for(int i=1; i<=N; i++){
-            System.out.print("Enter an number: ");
+            System.out.print("Enter number " + i + ": ");
             int number = sc.nextInt();
             if(number<0){
                 Neg++;

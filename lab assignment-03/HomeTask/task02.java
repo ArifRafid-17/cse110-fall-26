@@ -16,7 +16,7 @@ public class task02 {
             else{
                 H-=3;
                 C-=2;
-                System.out.println("Portion- "+i+" created");
+                System.out.println("Portion-"+i+" created");
                 System.out.println("Remaining Herbs: "+H+", Remaining Crystals: "+C);
                 count = i;
             }
