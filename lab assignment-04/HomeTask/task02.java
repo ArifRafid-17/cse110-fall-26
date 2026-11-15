@@ -11,7 +11,7 @@ public class task02 {
             System.out.print("Enter student ID: ");
             int id = sc.nextInt();
 
-            if(id<0){
+            if(id<=0){
                 System.out.println("Not Lucky");
 
             }
