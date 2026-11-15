@@ -1,0 +1,137 @@
+//Task01
+import java.util.Scanner;
+
+public class task01 {
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of Weeks, W: ");
+        int W = sc.nextInt();
+        int strl = 0;
+
+        for(int i=1 ; i<=W; i++){
+            for(int j=1; j<=i; j++){
+                strl -=j;
+            }
+        }
+        System.out.println("STRL= "+strl);
+    }
+}
+
+
+//Task02
+import java.util.Scanner;
+
+public class task02 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of students to check: ");
+        int N = sc.nextInt();
+
+        for (int i = 1; i <= N; i++) {
+            System.out.print("Enter student ID: ");
+            int id = sc.nextInt();
+
+            if(id<=0){
+                System.out.println("Not Lucky");
+
+            }
+            else{
+                while(id%2==0){
+                    id /=2;
+                }
+
+                if(id==1){
+                    System.out.println("Lucky ID");
+
+                }
+                else{
+                    System.out.println("Not Lucky");
+                }
+            }
+    }
+}
+}
+
+
+//Task03
+import java.util.Scanner;
+public class task03 {
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of days: ");
+        int Days = sc.nextInt();
+
+        for(int i= 1 ; i<=Days; i++){
+            System.out.println("Enter sales for Day "+i+": ");
+            double totalSale=0;
+            for(int j=1; j<=3; j++){
+                int sale = sc.nextInt();
+                totalSale+=sale;
+            }
+
+            if(totalSale>=500 ){
+                totalSale +=(totalSale*0.1);
+                System.out.println("Day "+i+": Total Sales with Tax: "+totalSale);
+            }
+            else if(totalSale>=200){
+                totalSale +=(totalSale*0.05);
+                System.out.println("Day "+i+": Total Sales with Tax: "+totalSale);
+            }
+            else if(totalSale>=100){
+                totalSale +=(totalSale*0.02);
+                System.out.println("Day "+i+": Total Sales with Tax: "+totalSale);
+            }
+        }
+
+    }
+}
+
+
+//Task04
+import java.util.Scanner;
+
+public class task04 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Number of Members: ");
+        int M = sc.nextInt();
+
+        for (int i = 1; i <= M; i++) {
+            System.out.print("Exercises for Member-" + i + ": ");
+            int E = sc.nextInt();
+            int rawSum = 0;
+            int sum = 0;
+            if (E > 3) {
+                System.out.println("(Can't do more than 3 exercise)");
+                int temp = E - 3;
+                E = E - temp;
+
+            }
+
+            for (int j = 1; j <= E; j++) {
+                System.out.print("Exercise-" + j + ": ");
+                int ex = sc.nextInt();
+                rawSum+=ex;
+
+                if (ex > 350) {
+                    ex += (ex * 0.5);
+                }
+                if (ex < 200) {
+                    ex -= (ex * 0.1);
+                }
+                sum+=ex;
+            }
+
+            double rawAvg =rawSum / E;
+            double avg = sum/E;
+            if (rawAvg > 400) {
+                avg += 50;
+            }
+
+
+            System.out.println("Average calories earned per day for Member-" + i + ": " + avg);
+        }
+    }
+}
